@@ -1,0 +1,17 @@
+body{
+background-color:#F2F3F4;
+}
+img{
+height:50%;
+width:50%;
+margin-left:370px;
+align:center;
+}
+h1{
+text-align:center;
+}
+p{
+font-family: "Trebuchet MS", Verdana, sans-serif;
+font-weight: bold;
+text-align:center;
+}
