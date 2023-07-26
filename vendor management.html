@@ -1,0 +1,169 @@
+<DOCKTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<title>Vendor Management</title>
+</head>
+<style>
+body{
+background-color:#F2F3F4;
+margin:0;
+}
+img{
+	height:45%;
+	width:45%;
+}
+h1{
+	text-align:center;
+}
+p{
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bold;
+	text-align:center;
+	margin-left:30px;
+	margin-right:30px;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container{
+  position: relative;
+  display: none;
+  height:100%;
+
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.row{
+align:center;
+}
+
+</style>
+<body>
+<marquee width="60%" direction="right" ><h1><b>Wedding Vendors Management</b></h1></marquee>
+<div class="col-md-12" style="background-color:#F2F3F4">
+	<div class="col-md-6">
+		<img src="vendor.jpg" style="margin-left:400px">
+	</div>
+</div><br><br><hr>
+<div class="col-md-12" >
+		<p>Vendor management is an integral part of event management.FNP Weddings provides a one stop shop for all your vendor 
+		management needs. We oversee all aspects of wedding vendors management and ensure the smooth flow of events that makes 
+		it an unforgettable occasion. Our area managers meticulously execute all that has been planned for the wedding. Our 
+		staff is very well groomed and takes care of the entire gamut of events from welcoming, escorting, venue layout as well 
+		as catering and dining.Try our mind boggling fireworks to add festivity to your wedding day. We can also arrange 
+		customized fireworks that will carry the stamp of your individual preferences. These can be used for the Baraat, Jaimaal,
+		Reception and Doli.The very best mehendi artists from Delhi, Mumbai and Kolkata are called upon to make the occasion 
+		grand. Our make- up artists are the best in the field.Our individual stalls have won a lot of accolades. We can set up 
+		exclusive stalls for baqngl4es, tqarot card reading, palmistry, and parrot astrologer. Our expert wedding and even 
+		planning team can provide you with Shenaiwalas, lightning people, palkis and more for the event. CCTV, fire brigades and
+		ambulances are provided at the venue.We also have expertise in providing you with a wide range of Wedding Vendors 
+		Management services. To make the bride and groom feel more special on their wedding day, we offer to provide them with a 
+		special entrance. Try out our mind-blowing fireworks to make your wedding a memorable one, and to fill it with more color
+		and light. Our Wedding and Event Planner can arrange for customized fireworks, which can be used at the time of Baraat, 
+		Jaimala, Reception or Doli. We can also arrange for skilled Mehendi artists from Delhi, Mumbai & Kolkata. Everybody 
+		wants to look their best in a wedding event we can make this possible by bringing our makeup artists from Delhi and 
+		Mumbai.As a trusted group of Wedding Planners, we have a long list of satisfied customers. We provide you with fool 
+		proof lightning and sound acoustic system for your Sangeeth and other marriage rituals. To make the Mehendi function 
+		come alive, we can set up some unique stalls like - small Bangle stores, tarot card reader, palmist, and parrot 
+		astrologer. For a traditional wedding, our Wedding and Event Planner team can provide you with Shenaiwalas, lightning 
+		people, palkis and more for the event. For a safe and secure marriage, we provide CCTV coverage of the whole wedding, 
+		proper lighting facility, and also, ambulances and fire brigade at your wedding event. We also provide ample car parking 
+		space, drivers food and recreation area for your event.
+</p>
+</body>
+<body>
+</div>
+<!-- The four columns -->
+<div class="container-fluid">
+	<div class="col-md-12">
+		<div class="row">
+			<div class="column">
+				<img src="vendor1.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="vendor2.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="vendor3.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="vendor4.jpg" alt="" style="width:100%" onclick="myFunction(this);" >
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img src="vendor5.jpeg" alt="" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="vendor6.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="vendor7.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="vendor8.jpg" alt="" style="width:100%" onclick="myFunction(this);" >
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:500% height:50%" >
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+<a href="Main.html" class="previous">&laquo;Previous</a>
+</html>

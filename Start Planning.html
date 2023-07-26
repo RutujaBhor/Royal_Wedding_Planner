@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Royal Wedding Planners</title> 
+		<style>
+		
+		input[type="number"] {
+		width:98%;
+		}
+		input[type="range"] {
+		width:95%;
+		}
+		input[type="text"] {
+		width:98%;
+		}
+		input[type="date"] {
+		width: 98%;
+		}
+		input[type="email"] {
+		width:98%;
+		}
+		input[type="tel"] {
+		width: 98%;
+		}
+		textarea {
+		width: 98%;
+		}
+		select {
+		width: 98%;
+		}
+
+		.split {
+		height: 100%;
+		width: 50%;
+		position: fixed;
+		overflow: scroll;
+		z-index: 1;
+		top: 0;
+		}
+		  
+		.left {	
+	    left: 0;
+		}
+		
+		.right {
+		/* Fill the attributes and values */
+		right: 0;
+		background-color: #CA9499;
+		width:60%;
+		padding: 10px;
+		}
+		
+		#image{
+		/* Fill the attributes and values */
+		width: 90%;
+		height: 90%;
+		}
+
+		h3{
+      	/* Fill the attributes and values */
+      	text-align: center;
+      	font-size: 20px;
+      	font-family: Georgia;
+      	border-radius: 6px;
+      	padding: 2px;
+		}
+		
+		table, h3{
+		/* Fill the attribute and value */
+		border-spacing: 2px;
+		width: 97%;
+		border: 3px solid #FFFFFF;
+		}
+		
+		td{
+	    /* Fill the attributes and values */
+	    color: #FFFFFF ;
+	    background-color: #A9A9A9;
+	    border-spacing: 5px;
+		border: 1px solid #FFFFFF;
+		}
+		   
+		#submit,h3{	
+		/* Fill the attributes and values */
+		color: #C21807;
+		font-weight: bold;
+		background-color: #FFFFFF;
+		}
+		
+		table,td,#submit{
+		/* Fill the attributes and values */
+		font-size: 15px;
+		font-family: Georgia;
+		border-radius: 6px;
+		padding: 5px;
+		}
+			
+		#submit:hover {      
+		background-color: #C21807; 
+		color:#FFFFFF; 
+		}
+		
+		#offers:hover {      
+		color: #C21807; 
+		}
+		
+		.b{
+		/* Fill the attribute and value */
+		color: #FFFFFF;
+		}
+		
+		#condition:hover {      
+		color: #C21807; 
+		}
+			
+		.c{
+		/* Fill the attributes and values */
+		color: #C21807;
+		font-size: 15px;
+		font-family: Georgia;
+		font-weight: bold;
+		}
+
+		.d{
+		border: 0px;
+		}
+		</style>
+	</head>
+	
+<body>
+<script>
+
+			function show_value(x)
+			{
+			document.getElementById("demo").innerHTML=x;
+			}
+</script>
+
+<div class="split left"><img src="ROYAL.png" id="image"></div>
+<div class="split right">
+<h3>ROYAL WEDDING PLANNERS  </h3>
+<table>
+	<tr class="d">
+	<td  class="d"><a  id ="wedding_info" href="#wedding"  class="b">Wedding-info</a></td>
+	<td  class="d"><a  id ="contact_info" href="#contact"  class="b">Contact-info</a></td>
+	<td  class="d"><a  id ="services_info" href="#services" class="b">Services required</a></td>
+	</tr>
+	
+	<tr>
+	<td colspan="3" class="c" id="wedding">Wedding Information</td>
+	</tr>
+	
+	<tr>
+		<td>Select your Wedding Destination : <br/><select id="Destination"  required="required">
+		                          <option>Select..</option>
+		                          <option>Jaipur</option>
+		                          <option>Jodhpur</option>
+		                          <option>Hyderabad</option>
+		                          <option>Mumbai</option>
+								  <option>Rajasthan</option>
+								  <option>Goa</option>
+		                          <option>Kerala</option>
+								  <option>karnatak</option>
+		                          </select></td>
+		<td>Wedding date : <br/><input type="date" id="date" required></td>
+		<td>No of guests <br/>  <input type="number" id="guests" required></td>
+	</tr>
+	
+	<tr>
+		<td>Venue</td>
+		<td colspan="2"><textarea id="venue" placeholder="Wedding venue" rows="4" cols="50" required></textarea></td>
+	</tr>
+	
+	<tr>
+		<td>Budget (approx)</td>
+		<td colspan="2"><input id="budget" value="0" type="range"min="200000" max="5000000" required onchange="show_value(this.value)">
+		<span id="demo"></span></td>	
+    </tr>
+
+
+
+	
+	<tr>
+	<td colspan="3" class="c" id="contact">Contact Information</a></td>
+	</tr>
+	
+    <tr>
+        <td>Customer Name</td>
+        <td colspan="2"><input  id=cname type="text" placeholder="Enter the customer name" pattern="[A-Z][a-z]"required></td>
+    </tr>
+
+	<tr>
+       <td>Phone Number</td>
+	   <td colspan="2"><input id="phno" type="tel" placeholder="Enter the phone number" pattern="[789]{1}[0-9]{9}" required></td>
+    </tr>
+	
+	<tr>
+		<td>Email ID</td>
+	   <td colspan="2"><input id="email" type="email" placeholder="Enter the email id" required></td>
+    </tr>  
+	
+	<tr>
+		<td colspan="3" class="c" id="services">Services Required</td>
+    </tr>
+
+	<tr class="d">
+		<td class="d"><input type="checkbox" id="invitation" name="charges">Invitation</td>
+		<td class="d"><input type="checkbox" id="decorators" name="charges">Decorators </td> 
+		<td class="d"><input type="checkbox" id="makeupArtists" name="charges">Makeup artists</td> 	
+	</tr>
+	
+	<tr>
+		<td class="d"><input type="checkbox" id="photo_video" name="charges">Photographers & Videographers</td>	
+		<td class="d"><input type="checkbox" id="ls_support" name="charges">Live streaming support</td> 
+		<td class="d"><input type="checkbox" id="caterers" name="charges">Caterers</td>	
+	</tr>
+	
+	<tr>
+		<td class="d"><input type="checkbox" id="transportation" name="charges">Transportation</td>	
+		<td class="d"><input type="checkbox" id="accomodation" name="charges">Accomodation</td> 
+		<td class="d"><input type="checkbox" id="theme"       name="charges">Theme-based</td>	
+	</tr>
+	
+	<tr>
+		<td colspan="3" id="condition">**Quote you receive will include service tax of 5.0%</td>
+	</tr>
+	
+ 
+</table>
+<br/>
+<p><input id="submit" type="button" value="GET A QUOTE"</p>
+</div>
+
+</body>
+</html>
