@@ -1,0 +1,59 @@
+body{
+background-image:url('login background.png');
+background-color:#595959; 
+}
+h1{
+text-align:center;
+}
+h5{
+color:#60095E;
+}
+.h6{
+color:#60095E;
+}
+h4{
+background-color:b3b3b3;
+text-align:center;
+color:white;
+}
+img{
+color:black;
+margin-top:30px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+dropdown-content {
+  display: none;
+  position: absolute;														
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:BDB76B;}
+
+h4{
+color:black;
+}
